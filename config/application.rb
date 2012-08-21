@@ -64,5 +64,14 @@ module Swansonipsum
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.generators do |g|
+      g.helper false
+      g.stylesheets false
+      g.assets false
+      g.javascript false
+
+      g.template_engine :haml
+    end
   end
 end
