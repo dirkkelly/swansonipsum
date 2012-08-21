@@ -1,3 +1,3 @@
-listen ENV['UNICORN_PORT']
+listen ENV['PORT']
 worker_processes 4
 timeout 30
