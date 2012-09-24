@@ -12,8 +12,10 @@
       .row
         .span6.offset3
           %ul.nav.nav-pills
-            %li.active
+            %li
               = link_to "Quotes", quotes_url, data: { pjax: '#swansons' }
+            %li
+              = link_to "Ipsums", ipsums_url, data: { pjax: '#swansons' }
           #swansons.well.small
             = yield
     .navbar.navbar-fixed-bottom
