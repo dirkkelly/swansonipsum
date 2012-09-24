@@ -11,7 +11,11 @@
     .container
       .row
         .span6.offset3
-          = yield
+          %ul.nav.nav-pills
+            %li.active
+              = link_to "Quotes", root_url, data: { pjax: '#ipsum' }
+          #ipsum.well.small
+            = yield
     .navbar.navbar-fixed-bottom
       .navbar-inner
         %ul.nav.pull-right
