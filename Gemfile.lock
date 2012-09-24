@@ -63,7 +63,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffaker (1.15.0)
-    ffakeron (0.0.1)
+    ffakeron (0.0.2)
       ffaker
     ffi (1.1.5)
     haml (3.1.4)

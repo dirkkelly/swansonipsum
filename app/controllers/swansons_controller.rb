@@ -1,6 +1,6 @@
 class SwansonsController < ApplicationController
   def quotes
-    @quotes = Faker::SwansonIpsum.paragraphs(3)
+    @quotes = swanson_quotes
 
     respond_with @quotes
   end
@@ -12,6 +12,10 @@ class SwansonsController < ApplicationController
   end
 
   private
+
+  def swanson_quotes
+    Faker::SwansonIpsum.paragraphs
+  end
 
   def swanson_ipsums
     result = []
