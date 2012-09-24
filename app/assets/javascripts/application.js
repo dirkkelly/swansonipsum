@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.pjax
 //= require bootstrap.min
 //= require application/swansonipsum
