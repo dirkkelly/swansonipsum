@@ -1,5 +1,5 @@
 Swansonipsum::Application.routes.draw do
-  match '/quotes' => "ipsums#quotes"
+  match '/quotes' => "swansons#quotes"
 
-  root :to => "ipsums#quotes"
+  root :to => "swansons#quotes"
 end

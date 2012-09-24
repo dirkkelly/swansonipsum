@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe IpsumsController do
+describe SwansonsController do
   subject { response }
   render_views
 
