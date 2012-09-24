@@ -5,17 +5,18 @@
     = stylesheet_link_tag "application"
     = csrf_meta_tags
   %body
-    .navbar
+    .navbar.navbar-inverse
       .navbar-inner
         = link_to "Swanson Ipsum", "/", class: "brand"
     .container
       .row
         .span6.offset3
           = yield
-    = javascript_include_tag "application"
     .navbar.navbar-fixed-bottom
       .navbar-inner
         %ul.nav.pull-right
           %li= link_to "github", "http://github.com/dirkkelly/swansonipsum"
           %li= link_to "gemcutter", "http://gemcutter.org/gems/ffakeron"
           %li= link_to "dirkkelly", "http://dirkkelly.com"
+
+    = javascript_include_tag "application"
