@@ -5,12 +5,6 @@ GIT
     active_model_serializers (0.5.0)
       activemodel (~> 3.0)
 
-GIT
-  remote: https://github.com/dirkkelly/ffaker.git
-  revision: 489ad3fe5d95d247804a099c4ec50ba5a0be81d5
-  specs:
-    ffaker (1.15.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,6 +62,9 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ffaker (1.15.0)
+    ffakeron (0.0.1)
+      ffaker
     ffi (1.1.5)
     haml (3.1.4)
     hike (1.2.1)
@@ -171,7 +168,8 @@ DEPENDENCIES
   active_model_serializers!
   capybara-webkit
   coffee-rails
-  ffaker!
+  ffaker
+  ffakeron
   haml
   jquery-rails
   pry

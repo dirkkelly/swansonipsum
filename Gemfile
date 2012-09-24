@@ -6,7 +6,8 @@ gem 'haml'
 gem 'sass'
 gem 'unicorn'
 gem 'active_model_serializers', git: 'git://github.com/josevalim/active_model_serializers.git'
-gem 'ffaker', git: 'https://github.com/dirkkelly/ffaker.git'
+gem 'ffaker'
+gem 'ffakeron'
 
 group :assets do
   gem 'sass-rails'
