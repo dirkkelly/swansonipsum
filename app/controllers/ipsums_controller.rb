@@ -1,11 +1,13 @@
 class IpsumsController < ApplicationController
+  def quotes
+    @quotes = Faker::SwansonIpsum.paragraphs(3)
 
-  respond_to :html
+    respond_with @quotes
+  end
 
-  def index
-    @ipsums = Faker::SwansonIpsum.paragraphs(3)
+  private
 
-    respond_with @ipsums
+  def paragraphs
   end
 
 end
