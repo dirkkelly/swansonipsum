@@ -1,2 +1,6 @@
-- @ipsums.each do |ipsum|
-  %p #{ipsum}
+%ul.nav.nav-pills
+  %li.active
+    = link_to "Quotes", root_url
+.well.small
+  - @ipsums.each do |ipsum|
+    %p #{ipsum}
