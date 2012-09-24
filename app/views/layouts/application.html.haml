@@ -8,14 +8,14 @@
     .navbar.navbar-inverse
       .navbar-inner
         = link_to "Swanson Ipsum", "/", class: "brand"
+        %ul.nav.pull-right
+          %li
+            = link_to "Quotes", quotes_url, data: { pjax: '#swansons' }
+          %li
+            = link_to "Ipsums", ipsums_url, data: { pjax: '#swansons' }
     .container
       .row
         .span6.offset3
-          %ul.nav.nav-pills
-            %li
-              = link_to "Quotes", quotes_url, data: { pjax: '#swansons' }
-            %li
-              = link_to "Ipsums", ipsums_url, data: { pjax: '#swansons' }
           #swansons.well.small
             = yield
     .navbar.navbar-fixed-bottom
