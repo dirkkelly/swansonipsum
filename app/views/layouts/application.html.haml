@@ -10,7 +10,9 @@
         = link_to "Swanson Ipsum", "/", class: "brand"
     .container
       .row
-        .span6.offset3
+        .span6
+          = image_tag 'ron.jpg', id: 'swanson'
+        .span6
           #swansons= yield
     .navbar.navbar-fixed-bottom
       .navbar-inner
