@@ -1,3 +1,8 @@
-#ipsums
+.nav.nav-tabs
+  %li.active
+    = link_to "Ipsums", ipsums_url, data: { pjax: '#swansons' }
+  %li
+    = link_to "Quotes", quotes_url, data: { pjax: '#swansons' }
+#ipsums{ data: { title: "SwansonIpsums"} }
   - @ipsums.each do |ipsum|
     %p #{ipsum}
