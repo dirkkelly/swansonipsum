@@ -14,7 +14,7 @@ class SwansonsController < ApplicationController
   private
 
   def swanson_quotes
-    Faker::SwansonIpsum.paragraphs
+    Faker::SwansonQuote.paragraphs
   end
 
   def swanson_ipsums
