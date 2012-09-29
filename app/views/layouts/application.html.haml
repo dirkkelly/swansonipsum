@@ -16,9 +16,11 @@
           #swansons= yield
     .navbar.navbar-fixed-bottom
       .navbar-inner
-        %ul.nav.pull-right
+        %ul.nav.pull-left
           %li= link_to "github", "http://github.com/dirkkelly/swansonipsum"
           %li= link_to "gemcutter", "http://gemcutter.org/gems/ffakeron"
-          %li= link_to "dirkkelly", "http://dirkkelly.com"
+        %ul.nav.pull-right
+          %li= link_to "Dirk Kelly", "http://dirkkelly.com"
+          %li= link_to "Sam Thurman", "http://www.samthurman.com/"
 
     = javascript_include_tag "application"
