@@ -23,6 +23,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'capybara-webkit'
+  gem 'nyan-cat-formatter'
 end
 
 group :production do
