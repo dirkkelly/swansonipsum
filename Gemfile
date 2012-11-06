@@ -9,6 +9,10 @@ gem 'active_model_serializers', git: 'git://github.com/josevalim/active_model_se
 gem 'ffaker'
 gem 'ffakeron'
 
+group :production do
+  gem 'newrelic_rpm'
+end
+
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
@@ -19,4 +23,8 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'capybara-webkit'
+end
+
+group :production do
+  gem 'newrelic_rpm'
 end
